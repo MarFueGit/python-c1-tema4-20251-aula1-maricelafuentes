@@ -14,6 +14,7 @@ El objetivo de esta práctica es que los estudiantes aprendan a crear un `Docker
         *   Copie el archivo `requirements.txt` e instale las dependencias.
         *   Copie el resto de los archivos de la aplicación.
         *   Exponga el puerto correcto donde la aplicación Flask escuchará.
+        *   **Cree un usuario no root llamado "usertest" y configure los permisos adecuados.**
         *   Defina el comando para ejecutar la aplicación Flask.
 
 2.  **Construir la Imagen Docker:**
@@ -29,7 +30,13 @@ El objetivo de esta práctica es que los estudiantes aprendan a crear un `Docker
 *   Después de ejecutar el contenedor, abran su navegador y visiten `http://localhost:5000` (o el puerto que hayan elegido).
 *   Deberían ver una respuesta JSON similar a la siguiente:
     ```json
-    {"mensaje": "¡Hola, mundo desde Flask en Docker!"}
+    {
+        "mensaje": "¡Hola, este es el primer ejemplo con Docker!",
+        "usuario": "usertest",
+        "pid": 1,
+        "uid": 1000
+    }
     ```
+*   **Importante:** La aplicación debe estar ejecutándose como el usuario `usertest` dentro del contenedor, no como `root`, lo que se verifica en la respuesta JSON.
 
-¡Mucha suerte con la práctica!
+¡Mucha suerte con el ejercicio!

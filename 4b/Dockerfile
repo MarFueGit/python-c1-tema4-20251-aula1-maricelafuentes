@@ -21,6 +21,11 @@ COPY
 # Asegúrate de que este puerto coincida con el puerto configurado en tu aplicación Flask.
 EXPOSE 
 
-# PASO 6: Define el comando para ejecutar la aplicación Flask cuando el contenedor se inicie.
+# PASO 6: Crea un usuario no root llamado "usertest" y configura los permisos adecuados.
+# Pista: Usa la instrucción RUN para crear el usuario y cambiar la propiedad de los archivos.
+RUN
+USER
+
+# PASO 7: Define el comando para ejecutar la aplicación Flask cuando el contenedor se inicie.
 # Pista: Ejecuta el script Python principal de tu aplicación.
-CMD 
+CMD
