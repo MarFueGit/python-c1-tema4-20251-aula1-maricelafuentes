@@ -47,3 +47,13 @@ Aprender los conceptos básicos de Docker utilizando una imagen oficial de Pytho
 ## Recursos útiles
 - [Documentación oficial de Docker](https://docs.docker.com/get-started/)
 - [Imágenes oficiales de Python en Docker Hub](https://hub.docker.com/_/python)
+
+
+
+
+
+
+## Resultado esperado del ejercicio con Docker
+
+![Ejecución del ejercicio 4b1 en Docker](images/resultado-docker-ej4b1.png)
+

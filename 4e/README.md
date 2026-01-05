@@ -40,3 +40,8 @@ El objetivo de esta práctica es que los estudiantes aprendan a crear un `Docker
 *   **Importante:** La aplicación debe estar ejecutándose como el usuario `usertest` dentro del contenedor, no como `root`, lo que se verifica en la respuesta JSON.
 
 ¡Mucha suerte con el ejercicio!
+
+
+
+
+
